@@ -1,0 +1,14 @@
+AQCH	Aquila chrysaetos
+COAL	Corapipo altera
+COCO	Corvus corone
+EMTR	Empidonax traillii
+FIAL	Ficedula albicollis
+LECO	Lepidothrix coronata
+MAVI	Manacus vitellinus
+MEUN	Melopsittacus undulatus
+NECH	Neopelma chrysocephalum
+PIFI	Pipra filicauda
+SMCA	Smithornis capensis
+PICH	Piprites chloris
+CEOR	Cephalopterus ornatus
+RHHO	Rhegmatorhina hoffmannsi

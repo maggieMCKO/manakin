@@ -1,0 +1,208 @@
+---
+title: "Manakin figure 1 related"
+author: "Maggie"
+date: "2026-02-28"
+output:
+  github_document:
+    toc: yes
+---
+
+This [R Markdown](http://rmarkdown.rstudio.com) Notebook contains codes for reproducing Fig.1D, 1E, and Fig.S1 of Balakrishnan et al. 'Genomic and physiological changes in a sexually selected and frugivorous bird radiation'.
+
+```{r, include = FALSE}
+
+library("ggtree")
+library("treeio")
+library("tidyverse")
+library("colorspace")
+library("ape")
+
+FontSize = 2.5
+AxisTxFontSizeSize = 5
+AxisTxFontSizeSize_s = 4
+AxisTitleFontSizeSize = 5
+
+set.seed(42)
+
+# setwd('/Users/mbp23/ownCloud/Baldwin/Projects/Manakin/Rscripts/for_github')
+```
+
+
+### Fig.1D
+```{r, fig.width = 5, fig.height = 7, warning=FALSE, fig.keep='last'}
+
+path = "data/Fig1D_Manakin_Ultrametric_AllSpecies_75_m1.tre"
+final = read.tree(file = path) # 54
+final$tip.label = gsub("(\\w+)_(\\w+)_\\w+", "\\1_\\2", final$tip.label)
+
+final_m = final
+
+# see the tree
+x_limit = max(final_m$edge) * 0.0003
+rootedge = min(final_m$edge, na.rm = TRUE) * 0.0005
+# x_limit = max(final_m$edge) * 1
+# rootedge = min(final_m$edge, na.rm = TRUE)
+# col_nonNectar = "grey50" # "#a0892c" # "#c8ab37"
+tree_p = ggtree(final_m, size = 0.25 ) + 
+  geom_tiplab(offset = 0.001, size = FontSize*0.25) +
+  geom_text(aes(label=node), hjust=-.3) +
+  geom_rootedge() +
+  # geom_tippoint(aes(color = group)) +
+  # scale_color_manual(values=c("red"), na.value =  col_nonNectar) + 
+  xlim_tree(x_limit) +
+  # coord_flip() +
+  theme_tree() + theme(legend.position = 'none'); # tree_p
+tree_p = tree_p %>% ggtree::rotate(55) ; # tree_p 
+
+# add tips
+# add 1
+x = read.tree(text = '(Empidonax);')
+# main tree
+tr2 <- final_m
+tr2$root.edge <- x$root.edge <- .2
+
+# attach: where can be a node number OR a tip index (see below)
+tr2 <- bind.tree(tr2, x, where = 55, position = 0.2)
+plot(tr2)
+nodelabels(frame="none")
+
+# add 2
+x = read.tree(text = '(Rhegmatorhina);')
+# main tree
+tr2 <- tr2
+tr2$root.edge <- x$root.edge <- .2
+
+# attach: where can be a node number OR a tip index (see below)
+tr2 <- bind.tree(tr2, x, where = 56, position = 0.2)
+plot(tr2)
+nodelabels(frame="none")
+
+# plot the added tree
+x_limit = max(tr2$edge) * 0.25
+rootedge = min(tr2$edge, na.rm = TRUE) * 0.0005
+# x_limit = max(final_m$edge) * 1
+# rootedge = min(final_m$edge, na.rm = TRUE)
+# col_nonNectar = "grey50" # "#a0892c" # "#c8ab37"
+tree_p = ggtree(tr2, size = 0.25, branch.length = "none" ) + 
+  geom_tiplab(offset = 0.001, size = FontSize) +
+  # geom_text(aes(label=node), hjust=-.3) +
+  # geom_rootedge(rootedge, size = 0.25) +
+  # geom_tippoint(aes(color = group)) +
+  # scale_color_manual(values=c("red"), na.value =  col_nonNectar) + 
+  xlim_tree(x_limit) +
+  # coord_flip() +
+  theme_tree() + theme(legend.position = 'none'); # tree_p
+tree_p = tree_p %>% ggtree::rotate(57) ; tree_p 
+```
+
+### Fig.1E
+```{r, fig.width = 7, fig.height = 4, warning=FALSE, message=FALSE, collapse=TRUE}
+
+path = paste0("data/Fig1E_allspecies.za.txt")
+df = read_delim(path, delim = " ")
+n_distinct(df$chrom)
+unique(df$chrom) # 31
+unique(df$species)
+df = df %>% 
+  mutate(Species = case_when( species == "antbird" ~ "Rhegmatorhina\nberlepschi", # !!
+                              species == "corapipo" ~  "Corapipo\naltera",
+                              species == "empid" ~"Empidonax\nalnorum", # !!
+                              species == "lepidothrix" ~ "Lepidothrix\ncoronata",
+                              species == "manacus" ~ "Manacus\nvitellinus",
+                              species == "neopelma" ~ "Neopelma\nchrysocephalum",
+                              species == "pipra" ~ "Pipra\nfilicauda"
+  ) )  
+ 
+names(df) = gsub("chrom", "Chromosome", names(df))
+names(df) = gsub("za", "ZA", names(df))
+names(df)
+
+# only plot 'big' chromosomes
+filtered_data <- df %>%
+  filter(Chromosome %in% c("Chr01", "Chr01A", "Chr02", "Chr03", "Chr04", "Chr04A", "Chr05", 
+                           "Chr06", "Chr07", "Chr08", "Chr09", "Chr10", "Chr11", "Chr12" )) %>% 
+  mutate(Chromosome = droplevels(factor(Chromosome)))
+n_distinct(filtered_data$Chromosome)
+
+filtered_data$Species = factor(filtered_data$Species, 
+                               levels = c("Rhegmatorhina\nberlepschi", "Empidonax\nalnorum", "Neopelma\nchrysocephalum", 
+                                          "Corapipo\naltera", "Lepidothrix\ncoronata", "Manacus\nvitellinus", "Pipra\nfilicauda"))
+
+col = sequential_hcl(palette = "Grays", n = n_distinct(filtered_data$Chromosome), l2 = 80,  rev = F)
+
+
+p = ggplot(filtered_data, aes(x = Species, y = ZA)) +
+  geom_hline(yintercept = 0.75, linetype = 'dashed', size = 0.1) +
+  geom_boxplot(width = 0.2, position = position_nudge(x = -0.3), outliers = FALSE) +
+  geom_point(aes(color = Chromosome), 
+             position = position_jitter(width = 0.1, height = 0)) +
+  scale_y_continuous(name = 'Z:A Ratio',
+                     limits = c(NA, 0.9),
+                     breaks = seq(0.1, 0.9, by = 0.1)) + 
+  scale_color_manual(values = col) +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE)) +
+  theme_classic() +
+  theme(
+    panel.border = element_rect(color = "black", fill = NA),
+    axis.title.x = element_blank(),
+    axis.text.x = element_text(face = "italic"), 
+    strip.text =  element_text(face = "italic"), 
+    legend.position = "bottom") ; p
+```
+
+### Fig.S1
+```{r, fig.width = 7, fig.height = 4, warning=FALSE, message=FALSE, collapse=TRUE}
+
+path = paste0("data/FigS1_allspecies.za.vit.txt")
+df = read_delim(path, delim = " ")
+n_distinct(df$chrom)
+unique(df$chrom) # 31
+unique(df$species)
+df = df %>% 
+  mutate(Species = case_when( species == "antbird" ~ "Rhegmatorhina\nberlepschi", # !!
+                              species == "corapipo" ~  "Corapipo\naltera",
+                              species == "empid" ~"Empidonax\nalnorum", # !!
+                              species == "lepidothrix" ~ "Lepidothrix\ncoronata",
+                              species == "manacus" ~ "Manacus\nvitellinus",
+                              species == "neopelma" ~ "Neopelma\nchrysocephalum",
+                              species == "pipra" ~ "Pipra\nfilicauda"
+  ) )  
+ 
+names(df) = gsub("chrom", "Chromosome", names(df))
+names(df) = gsub("za", "ZA", names(df))
+names(df)
+
+# only plot 'big' chromosomes
+filtered_data <- df %>%
+  filter(Chromosome %in% c("Chr01", "Chr01A", "Chr02", "Chr03", "Chr04", "Chr04A", "Chr05", 
+                           "Chr06", "Chr07", "Chr08", "Chr09", "Chr10", "Chr11", "Chr12" )) %>% 
+  mutate(Chromosome = droplevels(factor(Chromosome)))
+n_distinct(filtered_data$Chromosome)
+
+filtered_data$Species = factor(filtered_data$Species, 
+                               levels = c("Rhegmatorhina\nberlepschi", "Empidonax\nalnorum", "Neopelma\nchrysocephalum", 
+                                          "Corapipo\naltera", "Lepidothrix\ncoronata", "Manacus\nvitellinus", "Pipra\nfilicauda"))
+
+col = sequential_hcl(palette = "Grays", n = n_distinct(filtered_data$Chromosome), l2 = 80,  rev = F)
+
+
+p = ggplot(filtered_data, aes(x = Species, y = ZA)) +
+  geom_hline(yintercept = 0.75, linetype = 'dashed', size = 0.1) +
+  geom_boxplot(width = 0.2, position = position_nudge(x = -0.3), outliers = FALSE) +
+  geom_point(aes(color = Chromosome), 
+             position = position_jitter(width = 0.1, height = 0)) +
+  scale_y_continuous(name = 'Z:A Ratio',
+                     limits = c(NA, 0.9),
+                     breaks = seq(0.1, 0.9, by = 0.1)) + 
+  scale_color_manual(values = col) +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE)) +
+  theme_classic() +
+  theme(
+    panel.border = element_rect(color = "black", fill = NA),
+    axis.title.x = element_blank(),
+    axis.text.x = element_text(face = "italic"), 
+    strip.text =  element_text(face = "italic"), 
+    legend.position = "bottom") ; p
+```
+
+

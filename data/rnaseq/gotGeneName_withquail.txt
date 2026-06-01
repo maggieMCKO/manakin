@@ -1,0 +1,663 @@
+current: APOB
+APOB apolipoprotein B[Manacus vitellinus]
+APOB apolipoprotein B[Coturnix japonica]
+current: LOC115307605
+LOC115307605 U2 spliceosomal RNA[Manacus vitellinus]
+current: LOC112841282
+LOC112841282 U4 spliceosomal RNA[Manacus vitellinus]
+current: FABP1
+FABP1 fatty acid binding protein 1[Manacus vitellinus]
+FABP1 fatty acid binding protein 1[Coturnix japonica]
+current: LOC112841562
+LOC112841562 U2 spliceosomal RNA[Manacus vitellinus]
+LOC112841466 U2 spliceosomal RNA[Manacus vitellinus]
+current: TTR
+TTR transthyretin[Manacus vitellinus]
+current: FABP6
+FABP6 fatty acid binding protein 6[Manacus vitellinus]
+FABP6 fatty acid binding protein 6[Coturnix japonica]
+current: ALB
+GPR143 G protein-coupled receptor 143[Manacus vitellinus]
+ALB albumin[Coturnix japonica]
+current: PCK1
+PCK1 phosphoenolpyruvate carboxykinase 1[Manacus vitellinus]
+PCK1 phosphoenolpyruvate carboxykinase 1[Coturnix japonica]
+current: ALDOB
+ALDOB aldolase, fructose-bisphosphate B[Manacus vitellinus]
+ALDOB aldolase, fructose-bisphosphate B[Coturnix japonica]
+current: LOC103756036
+LOC103756036 L-lactate dehydrogenase A chain[Manacus vitellinus]
+current: LOC112841267
+LOC112841267 small nucleolar RNA SNORA73 family[Manacus vitellinus]
+current: LOC112841078
+LOC112841078 U5 spliceosomal RNA[Manacus vitellinus]
+current: ENPEP
+ENPEP glutamyl aminopeptidase[Manacus vitellinus]
+ENPEP glutamyl aminopeptidase[Coturnix japonica]
+current: LOC108639024
+LOC108639024 cytochrome P450 2H1-like[Manacus vitellinus]
+current: SELENOP
+SELENOP selenoprotein P[Manacus vitellinus]
+SELENOP selenoprotein P[Coturnix japonica]
+current: ATP1A1
+ATP1A1 ATPase Na+/K+ transporting subunit alpha 1[Manacus vitellinus]
+ATP1A1 ATPase Na+/K+ transporting subunit alpha 1[Coturnix japonica]
+current: LOC112841079
+LOC112841079 U5 spliceosomal RNA[Manacus vitellinus]
+current: GAPDH
+GAPDH glyceraldehyde-3-phosphate dehydrogenase[Manacus vitellinus]
+GAPDH glyceraldehyde-3-phosphate dehydrogenase[Coturnix japonica]
+current: SI
+GAA alpha glucosidase[Manacus vitellinus]
+NNT nicotinamide nucleotide transhydrogenase[Coturnix japonica]
+current: UGP2
+UGP2 UDP-glucose pyrophosphorylase 2[Manacus vitellinus]
+UGP2 UDP-glucose pyrophosphorylase 2[Coturnix japonica]
+current: HSP90AA1
+HSP90AA1 heat shock protein 90 alpha family class A member 1[Manacus vitellinus]
+HSP90AA1 heat shock protein 90 alpha family class A member 1[Coturnix japonica]
+current: ATP1B1
+ATP1B1 ATPase Na+/K+ transporting subunit beta 1[Manacus vitellinus]
+ATP1B1 ATPase Na+/K+ transporting subunit beta 1[Coturnix japonica]
+current: MTTP
+MTTP microsomal triglyceride transfer protein[Manacus vitellinus]
+MTTP microsomal triglyceride transfer protein[Coturnix japonica]
+current: EEF1A1
+EEF1A1 eukaryotic translation elongation factor 1 alpha 1[Manacus vitellinus]
+EEF1A1 eukaryotic translation elongation factor 1 alpha 1[Coturnix japonica]
+current: LOC112841356
+LOC112841356 gallinacin-10-like[Manacus vitellinus]
+current: LOC103754978
+LOC103754978 sulfotransferase 6B1[Manacus vitellinus]
+current: MEP1A
+MEP1A meprin A subunit alpha[Manacus vitellinus]
+MEP1A meprin A subunit alpha[Coturnix japonica]
+current: FASN
+FASN fatty acid synthase[Manacus vitellinus]
+FASN fatty acid synthase[Coturnix japonica]
+current: HSP90B1
+HSP90B1 heat shock protein 90 beta family member 1[Manacus vitellinus]
+HSP90B1 heat shock protein 90 beta family member 1[Coturnix japonica]
+current: ACTB
+ACTB actin beta[Manacus vitellinus]
+ACTB actin beta[Coturnix japonica]
+current: LOC103762041
+LOC103762041 guanylin[Manacus vitellinus]
+current: SCD
+SCD stearoyl-CoA desaturase[Manacus vitellinus]
+SCD stearoyl-CoA desaturase[Coturnix japonica]
+current: LOC103765453
+LOC103754701 fatty acid-binding protein, liver[Manacus vitellinus]
+current: LOC115307257
+LOC115307257 cytochrome P450 2H1-like[Manacus vitellinus]
+current: MME
+MME membrane metalloendopeptidase[Manacus vitellinus]
+MME membrane metalloendopeptidase[Coturnix japonica]
+current: ANPEP
+ANPEP alanyl aminopeptidase, membrane[Manacus vitellinus]
+ANPEP alanyl aminopeptidase, membrane[Coturnix japonica]
+current: LOC108642048
+LOC108642043 fatty acyl-CoA hydrolase precursor, medium chain-like[Manacus vitellinus]
+current: LOC103764673
+LOC103764673 cytochrome P450 2D17[Manacus vitellinus]
+current: LOC108639670
+LOC108639670 glutathione S-transferase-like[Manacus vitellinus]
+current: UBB
+UBB ubiquitin B[Manacus vitellinus]
+UBB ubiquitin B[Coturnix japonica]
+current: CDO1
+CDO1 cysteine dioxygenase type 1[Manacus vitellinus]
+CDO1 cysteine dioxygenase type 1[Coturnix japonica]
+current: KNG1
+KNG1 kininogen 1[Manacus vitellinus]
+KNG1 kininogen 1[Coturnix japonica]
+current: AGR2
+AGR2 anterior gradient 2, protein disulphide isomerase family member[Manacus vitellinus]
+AGR2 anterior gradient 2, protein disulphide isomerase family member[Coturnix japonica]
+current: RBP2
+RBP2 retinol binding protein 2[Manacus vitellinus]
+RBP2 retinol binding protein 2[Coturnix japonica]
+current: MUC2
+MUC2 mucin 2, oligomeric mucus/gel-forming[Manacus vitellinus]
+MUC2 mucin 2, oligomeric mucus/gel-forming[Coturnix japonica]
+current: SLC6A19
+SLC6A19 solute carrier family 6 member 19[Manacus vitellinus]
+SLC6A19 solute carrier family 6 member 19[Coturnix japonica]
+current: LOC103763127
+LOC103763127 beta-microseminoprotein[Manacus vitellinus]
+current: LOC103766162
+LOC103766162 UDP-glucuronosyltransferase 2A2[Manacus vitellinus]
+current: LOC108639025
+LOC108639025 cytochrome P450 2H1-like[Manacus vitellinus]
+current: LOC103764877
+LOC103764877 ovoinhibitor[Manacus vitellinus]
+current: TDO2
+TDO2 tryptophan 2,3-dioxygenase[Manacus vitellinus]
+TDO2 tryptophan 2,3-dioxygenase[Coturnix japonica]
+current: GPAM
+GPAM glycerol-3-phosphate acyltransferase, mitochondrial[Manacus vitellinus]
+GPAM glycerol-3-phosphate acyltransferase, mitochondrial[Coturnix japonica]
+current: CAT
+ADA2 adenosine deaminase 2[Manacus vitellinus]
+NADK2 NAD kinase 2, mitochondrial[Coturnix japonica]
+current: FGB
+FGB fibrinogen beta chain[Manacus vitellinus]
+FGB fibrinogen beta chain[Coturnix japonica]
+current: HRG
+HRG histidine rich glycoprotein[Manacus vitellinus]
+HRG histidine rich glycoprotein[Coturnix japonica]
+current: FGG
+FGG fibrinogen gamma chain[Manacus vitellinus]
+FGG fibrinogen gamma chain[Coturnix japonica]
+current: LOC112841294
+LOC112841294 serine protease inhibitor 2.1-like[Manacus vitellinus]
+current: PAH
+NPY neuropeptide Y[Manacus vitellinus]
+NPY neuropeptide Y[Coturnix japonica]
+current: TTPA
+TTPA alpha tocopherol transfer protein[Manacus vitellinus]
+TTPA alpha tocopherol transfer protein[Coturnix japonica]
+current: FGA
+FGA fibrinogen alpha chain[Manacus vitellinus]
+FGA fibrinogen alpha chain[Coturnix japonica]
+current: PRPS2
+PRPS2 phosphoribosyl pyrophosphate synthetase 2[Manacus vitellinus]
+PRPS2 phosphoribosyl pyrophosphate synthetase 2[Coturnix japonica]
+current: LOC103756962
+LOC103756962 fructose-1,6-bisphosphatase 1[Manacus vitellinus]
+current: ELOVL6
+ELOVL6 ELOVL fatty acid elongase 6[Manacus vitellinus]
+ELOVL6 ELOVL fatty acid elongase 6[Coturnix japonica]
+current: AHSG
+AHSG alpha 2-HS glycoprotein[Manacus vitellinus]
+AHSG alpha 2-HS glycoprotein[Coturnix japonica]
+current: LOC103757443
+LOC103757443 sulfotransferase 6B1[Manacus vitellinus]
+current: APOH
+APOH apolipoprotein H[Manacus vitellinus]
+APOH apolipoprotein H[Coturnix japonica]
+current: CD81
+CD81 CD81 molecule[Manacus vitellinus]
+CD81 CD81 molecule[Coturnix japonica]
+current: RBP4
+RBP4 retinol binding protein 4[Manacus vitellinus]
+RBP4 retinol binding protein 4[Coturnix japonica]
+current: NUDT5
+NUDT5 nudix hydrolase 5[Manacus vitellinus]
+NUDT14 nudix hydrolase 14[Coturnix japonica]
+current: LOC103766535
+LOC103766535 alpha-1-antiproteinase 2[Manacus vitellinus]
+current: LOC103763475
+LOC103763475 estradiol 17-beta-dehydrogenase 11[Manacus vitellinus]
+current: LOC103757220
+LOC103757220 inter-alpha-trypsin inhibitor heavy chain H3-like[Manacus vitellinus]
+current: FETUB
+FETUB fetuin B[Manacus vitellinus]
+FETUB fetuin B[Coturnix japonica]
+current: PSAT1
+PSAT1 phosphoserine aminotransferase 1[Manacus vitellinus]
+PSAT1 phosphoserine aminotransferase 1[Coturnix japonica]
+current: ME1
+ME1 malic enzyme 1[Manacus vitellinus]
+ME1 malic enzyme 1[Coturnix japonica]
+current: PARVA
+PARVA parvin alpha[Manacus vitellinus]
+PARVA parvin alpha[Coturnix japonica]
+current: RPS6
+RPS6 ribosomal protein S6[Manacus vitellinus]
+RPS6 ribosomal protein S6[Coturnix japonica]
+current: LOC103756175
+LOC103756175 ferritin heavy chain[Manacus vitellinus]
+current: LOC103758332
+LOC103758332 IgGFc-binding protein[Manacus vitellinus]
+current: ENTPD5
+ENTPD5 ectonucleoside triphosphate diphosphohydrolase 5 (inactive)[Manacus vitellinus]
+ENTPD5 ectonucleoside triphosphate diphosphohydrolase 5 (inactive)[Coturnix japonica]
+current: CRIP1
+CRIP1 cysteine rich protein 1[Manacus vitellinus]
+CRIP1 cysteine rich protein 1[Coturnix japonica]
+current: MEP1B
+MEP1B meprin A subunit beta[Manacus vitellinus]
+LOC107310133 E3 ubiquitin-protein ligase RNF138[Coturnix japonica]
+current: LOC103754170
+LOC103754170 mucin-2[Manacus vitellinus]
+current: ACSL5
+ACSL5 acyl-CoA synthetase long chain family member 5[Manacus vitellinus]
+ACSL5 acyl-CoA synthetase long chain family member 5[Coturnix japonica]
+current: LGALS3
+LGALS3 galectin 3[Manacus vitellinus]
+LGALS3 galectin 3[Coturnix japonica]
+current: LOC103765855
+LOC103765855 epoxide hydrolase 1[Manacus vitellinus]
+current: LOC108639019
+LOC103765347 cytochrome P450 2C9[Manacus vitellinus]
+current: FABP2
+FABP2 fatty acid binding protein 2[Manacus vitellinus]
+FABP2 fatty acid binding protein 2[Coturnix japonica]
+current: TM4SF4
+TM4SF4 transmembrane 4 L six family member 4[Manacus vitellinus]
+TM4SF4 transmembrane 4 L six family member 4[Coturnix japonica]
+current: TSKU
+TSKU tsukushi, small leucine rich proteoglycan[Manacus vitellinus]
+TSKU tsukushi, small leucine rich proteoglycan[Coturnix japonica]
+current: LOC115307689
+LOC115307689 apolipoprotein A-IV-like[Manacus vitellinus]
+current: LOC103758588
+LOC103758588 protocadherin Fat 4[Manacus vitellinus]
+current: TSPAN1
+TSPAN1 tetraspanin 1[Manacus vitellinus]
+TSPAN1 tetraspanin 1[Coturnix japonica]
+current: LOC103762172
+LOC103762172 solute carrier family 2, facilitated glucose transporter member 5[Manacus vitellinus]
+current: FAT1
+FAT1 FAT atypical cadherin 1[Manacus vitellinus]
+FAT1 FAT atypical cadherin 1[Coturnix japonica]
+current: ACE2
+ACE2 angiotensin converting enzyme 2[Manacus vitellinus]
+ACE2 angiotensin converting enzyme 2[Coturnix japonica]
+current: ABCB1
+ABCB1 ATP binding cassette subfamily B member 1[Manacus vitellinus]
+LOC107309017 ATP-dependent translocase ABCB1-like[Coturnix japonica]
+current: LRP2
+LRP2BP LRP2 binding protein[Manacus vitellinus]
+LRP2BP LRP2 binding protein[Coturnix japonica]
+current: SLC26A1
+SLC26A1 solute carrier family 26 member 1[Manacus vitellinus]
+SLC26A1 solute carrier family 26 member 1[Coturnix japonica]
+current: PPDPF
+PPDPF pancreatic progenitor cell differentiation and proliferation factor[Manacus vitellinus]
+PPDPF pancreatic progenitor cell differentiation and proliferation factor[Coturnix japonica]
+current: IVNS1ABP
+IVNS1ABP influenza virus NS1A binding protein[Manacus vitellinus]
+IVNS1ABP influenza virus NS1A binding protein[Coturnix japonica]
+current: KIAA1191
+KIAA1191 KIAA1191 ortholog[Manacus vitellinus]
+KIAA1191 KIAA1191 ortholog[Coturnix japonica]
+current: SLC34A1
+SLC34A1 solute carrier family 34 member 1[Manacus vitellinus]
+SLC34A1 solute carrier family 34 member 1[Coturnix japonica]
+current: G6PC
+G6PC1 glucose-6-phosphatase catalytic subunit 1[Manacus vitellinus]
+G6PC1 glucose-6-phosphatase catalytic subunit 1[Coturnix japonica]
+current: CUBN
+CUBN cubilin[Manacus vitellinus]
+CUBN cubilin[Coturnix japonica]
+current: SLC25A6
+SLC25A6 solute carrier family 25 member 6[Manacus vitellinus]
+SLC25A6 solute carrier family 25 member 6[Coturnix japonica]
+current: LOC103763098
+LOC103763098 hemoglobin subunit alpha-A[Manacus vitellinus]
+current: ETNK1
+ETNK1 ethanolamine kinase 1[Manacus vitellinus]
+ETNK1 ethanolamine kinase 1[Coturnix japonica]
+current: PDXK
+PDXK pyridoxal kinase[Manacus vitellinus]
+PDXK pyridoxal kinase[Coturnix japonica]
+current: ENO1
+ENO1 enolase 1[Manacus vitellinus]
+ENO1 enolase 1[Coturnix japonica]
+current: AOX1
+AOX1 aldehyde oxidase 1[Manacus vitellinus]
+AOX1 aldehyde oxidase 1[Coturnix japonica]
+current: IDH1
+IDH1 isocitrate dehydrogenase (NADP(+)) 1[Manacus vitellinus]
+IDH1 isocitrate dehydrogenase (NADP(+)) 1[Coturnix japonica]
+current: LOC108640128
+LOC108640128 collagen alpha-1(I) chain-like[Manacus vitellinus]
+current: ETNPPL
+ETNPPL ethanolamine-phosphate phospho-lyase[Manacus vitellinus]
+ETNPPL ethanolamine-phosphate phospho-lyase[Coturnix japonica]
+current: LGMN
+LGMN legumain[Manacus vitellinus]
+LGMN legumain[Coturnix japonica]
+current: CRYL1
+CRYL1 crystallin lambda 1[Manacus vitellinus]
+CRYL1 crystallin lambda 1[Coturnix japonica]
+current: CTSL
+CTSL cathepsin L[Manacus vitellinus]
+CTSL cathepsin L[Coturnix japonica]
+current: GHITM
+GHITM growth hormone inducible transmembrane protein[Manacus vitellinus]
+GHITM growth hormone inducible transmembrane protein[Coturnix japonica]
+current: DYNC1H1
+DYNC1H1 dynein cytoplasmic 1 heavy chain 1[Manacus vitellinus]
+DYNC1H1 dynein cytoplasmic 1 heavy chain 1[Coturnix japonica]
+current: LOC103762894
+LOC103762894 solute carrier family 2, facilitated glucose transporter member 11-like[Manacus vitellinus]
+current: LOC103754097
+LOC103754097 mitochondrial amidoxime reducing component 2[Manacus vitellinus]
+current: CPT1A
+CPT1A carnitine palmitoyltransferase 1A[Manacus vitellinus]
+CPT1A carnitine palmitoyltransferase 1A[Coturnix japonica]
+current: EIF4G2
+EIF4G2 eukaryotic translation initiation factor 4 gamma 2[Manacus vitellinus]
+EIF4G2 eukaryotic translation initiation factor 4 gamma 2[Coturnix japonica]
+current: LOC103761403
+LOC103761403 acyl-coenzyme A synthetase ACSM4, mitochondrial[Manacus vitellinus]
+current: LAMP1
+LAMP1 lysosomal associated membrane protein 1[Manacus vitellinus]
+LAMP1 lysosomal associated membrane protein 1[Coturnix japonica]
+current: RETSAT
+RETSAT retinol saturase[Manacus vitellinus]
+RETSAT retinol saturase[Coturnix japonica]
+current: LOC112841157
+LOC112841157 small nucleolar RNA SNORA81[Manacus vitellinus]
+current: LOC112841173
+LOC112841173 small nucleolar RNA SNORA23[Manacus vitellinus]
+current: LOC112841070
+LOC112841070 U5 spliceosomal RNA[Manacus vitellinus]
+current: LOC112841024
+LOC112841024 small nucleolar RNA SNORA36 family[Manacus vitellinus]
+current: LOC112841283
+LOC112841283 U4 spliceosomal RNA[Manacus vitellinus]
+current: LOC112841563
+LOC112841563 small nucleolar RNA U3[Manacus vitellinus]
+current: LOC112841136
+LOC112841136 small nucleolar RNA SNORA17[Manacus vitellinus]
+current: LOC112841046
+LOC112841046 small nucleolar RNA SNORA40[Manacus vitellinus]
+current: NR1H4
+NR1H4 nuclear receptor subfamily 1 group H member 4[Manacus vitellinus]
+NR1H4 nuclear receptor subfamily 1 group H member 4[Coturnix japonica]
+current: SDC4
+SDC4 syndecan 4[Manacus vitellinus]
+SDC4 syndecan 4[Coturnix japonica]
+current: ARF1
+ARL1 ADP ribosylation factor like GTPase 1[Manacus vitellinus]
+ARF1 ADP ribosylation factor 1[Coturnix japonica]
+current: CCPG1
+CCPG1 cell cycle progression 1[Manacus vitellinus]
+current: NBEAL1
+NBEAL1 neurobeachin like 1[Manacus vitellinus]
+NBEAL1 neurobeachin like 1[Coturnix japonica]
+current: RGPD4
+RGPD4 RANBP2 like and GRIP domain containing 4[Manacus vitellinus]
+current: SENP6
+SENP6 SUMO specific peptidase 6[Manacus vitellinus]
+SENP6 SUMO specific peptidase 6[Coturnix japonica]
+current: CPB1
+CPB1 carboxypeptidase B1[Manacus vitellinus]
+CPB1 carboxypeptidase B1[Coturnix japonica]
+current: LOC103765180
+LOC103765180 trypsin[Manacus vitellinus]
+current: CEL
+CLEC19A C-type lectin domain containing 19A[Manacus vitellinus]
+CEL carboxyl ester lipase[Coturnix japonica]
+current: LOC103761551
+LOC103761551 cytochrome P450 3A9[Manacus vitellinus]
+current: SPTBN5
+SPTBN5 spectrin beta, non-erythrocytic 5[Manacus vitellinus]
+SPTBN5 spectrin beta, non-erythrocytic 5[Coturnix japonica]
+current: LOC103756374
+LOC103756374 pancreatic triacylglycerol lipase[Manacus vitellinus]
+current: LOC108639672
+LOC108639672 glutathione S-transferase-like[Manacus vitellinus]
+current: LOC103761637
+LOC103761637 fatty acyl-CoA hydrolase precursor, medium chain[Manacus vitellinus]
+current: CDH17
+CDH17 cadherin 17[Manacus vitellinus]
+CDH17 cadherin 17[Coturnix japonica]
+current: LOC103753799
+An error has occured. Please try again later.
+current: TMPRSS15
+TMPRSS15 transmembrane serine protease 15[Manacus vitellinus]
+TMPRSS15 transmembrane serine protease 15[Coturnix japonica]
+current: ALDH1A1
+ALDH1A1 aldehyde dehydrogenase 1 family member A1[Manacus vitellinus]
+ALDH1A1 aldehyde dehydrogenase 1 family member A1[Coturnix japonica]
+current: LOC103755529
+LOC103755529 hemoglobin subunit beta[Manacus vitellinus]
+current: LOC103755563
+LOC103755563 cytochrome P450 2K6[Manacus vitellinus]
+current: HMGCS2
+HMGCS2 3-hydroxy-3-methylglutaryl-CoA synthase 2[Manacus vitellinus]
+HMGCS2 3-hydroxy-3-methylglutaryl-CoA synthase 2[Coturnix japonica]
+current: LOC103757295
+LOC103757295 heat shock cognate 71 kDa protein[Manacus vitellinus]
+current: SLC12A1
+SLC12A1 solute carrier family 12 member 1[Manacus vitellinus]
+SLC12A1 solute carrier family 12 member 1[Coturnix japonica]
+current: CA2
+
+
+current: SPTBN1
+SPTBN1 spectrin beta, non-erythrocytic 1[Manacus vitellinus]
+SPTBN1 spectrin beta, non-erythrocytic 1[Coturnix japonica]
+current: ACTG1
+ACTG1 actin gamma 1[Manacus vitellinus]
+ACTG1 actin gamma 1[Coturnix japonica]
+current: APLP2
+APLP2 amyloid beta precursor like protein 2[Manacus vitellinus]
+APLP2 amyloid beta precursor like protein 2[Coturnix japonica]
+current: LOC112841224
+LOC112841224 small nucleolar RNA SNORA33[Manacus vitellinus]
+current: LOC112841027
+LOC112841027 small nucleolar RNA SNORD17[Manacus vitellinus]
+current: TRNAD-GUC-2
+TRNAD-GUC transfer RNA aspartic acid (anticodon GUC)[Coturnix japonica]
+current: TRNAD-GUC-3
+current: TRNAD-GUC-4
+current: LOC112841113
+LOC112841113 small nucleolar RNA SNORA74[Manacus vitellinus]
+current: LOC112841043
+LOC112841043 small nucleolar RNA SNORA18[Manacus vitellinus]
+current: TRNAG-UCC-2
+TRNAG-UCC transfer RNA glycine (anticodon UCC)[Coturnix japonica]
+current: LOC112841299
+LOC112841299 small nucleolar RNA SNORA28[Manacus vitellinus]
+current: LOC112841026
+LOC112841026 small nucleolar RNA SNORD17[Manacus vitellinus]
+current: LOC112841166
+LOC112841166 small nucleolar RNA SNORA62/SNORA6 family[Manacus vitellinus]
+current: LOC112841125
+LOC112841125 small nucleolar RNA SNORA26[Manacus vitellinus]
+current: LOC112841138
+LOC112841138 U6atac minor spliceosomal RNA[Manacus vitellinus]
+current: LOC112840997
+LOC112840997 small nucleolar RNA SNORD16[Manacus vitellinus]
+current: LOC116653208
+LOC116653208 gallinacin-10-like[Coturnix japonica]
+current: FTH1
+LOC103756175 ferritin heavy chain[Manacus vitellinus]
+FTH1 ferritin heavy chain 1[Coturnix japonica]
+current: CTH
+CTH cystathionine gamma-lyase[Manacus vitellinus]
+CTH cystathionine gamma-lyase[Coturnix japonica]
+current: LOC107305801
+LOC107305801 avidin-like[Coturnix japonica]
+current: LOC107318213
+LOC107318213 mucin-4-like[Coturnix japonica]
+current: LOC107312450
+LOC107312450 cytochrome P450 2K6-like[Coturnix japonica]
+current: UBC
+UBC ubiquitin C[Manacus vitellinus]
+UBC ubiquitin C[Coturnix japonica]
+current: ABAT
+ABAT 4-aminobutyrate aminotransferase[Manacus vitellinus]
+ABAT 4-aminobutyrate aminotransferase[Coturnix japonica]
+current: LOC116652725
+LOC116652725 uncharacterized LOC116652725[Coturnix japonica]
+current: XDH
+XDH xanthine dehydrogenase[Manacus vitellinus]
+XDH xanthine dehydrogenase[Coturnix japonica]
+current: GPT2
+GPT2 glutamic--pyruvic transaminase 2[Coturnix japonica]
+current: HSPA8
+HSPA8 heat shock protein family A (Hsp70) member 8[Manacus vitellinus]
+HSPA8 heat shock protein family A (Hsp70) member 8[Coturnix japonica]
+current: MTARC1
+MTARC1 mitochondrial amidoxime reducing component 2[Coturnix japonica]
+current: APOA1
+LOC103762302 apolipoprotein A-I[Manacus vitellinus]
+APOA1 apolipoprotein A1[Coturnix japonica]
+current: DDX3X
+DDX3X DEAD-box helicase 3 X-linked[Manacus vitellinus]
+DDX3X DEAD-box helicase 3 X-linked[Coturnix japonica]
+current: LOC107308585
+LOC107308585 hemoglobin subunit beta[Coturnix japonica]
+current: LOC107306278
+LOC107306278 fructose-1,6-bisphosphatase 1[Coturnix japonica]
+current: LOC107320982
+LOC107320982 hemoglobin subunit alpha-A[Coturnix japonica]
+current: LOC107307715
+LOC107307715 regucalcin[Coturnix japonica]
+current: ATP5F1A
+ATP5F1A ATP synthase F1 subunit alpha[Manacus vitellinus]
+ATP5F1A ATP synthase F1 subunit alpha[Coturnix japonica]
+current: CLTRN
+CLTRN collectrin, amino acid transport regulator[Manacus vitellinus]
+CLTRN collectrin, amino acid transport regulator[Coturnix japonica]
+current: LOC107307284
+LOC107307284 uncharacterized LOC107307284[Coturnix japonica]
+current: EHHADH
+EHHADH enoyl-CoA hydratase and 3-hydroxyacyl CoA dehydrogenase[Manacus vitellinus]
+EHHADH enoyl-CoA hydratase and 3-hydroxyacyl CoA dehydrogenase[Coturnix japonica]
+current: ALDH6A1
+ALDH6A1 aldehyde dehydrogenase 6 family member A1[Manacus vitellinus]
+ALDH6A1 aldehyde dehydrogenase 6 family member A1[Coturnix japonica]
+current: HADH
+HADH hydroxyacyl-CoA dehydrogenase[Manacus vitellinus]
+HADH hydroxyacyl-CoA dehydrogenase[Coturnix japonica]
+current: AGXT2
+AGXT2 alanine--glyoxylate aminotransferase 2[Manacus vitellinus]
+AGXT2 alanine--glyoxylate aminotransferase 2[Coturnix japonica]
+current: EEF2
+EEF2 eukaryotic translation elongation factor 2[Manacus vitellinus]
+EFL1 elongation factor like GTPase 1[Coturnix japonica]
+current: TPT1
+TPT1 tumor protein, translationally-controlled 1[Manacus vitellinus]
+TRPT1 tRNA phosphotransferase 1[Coturnix japonica]
+current: LDHB
+LDHB lactate dehydrogenase B[Manacus vitellinus]
+LDHB lactate dehydrogenase B[Coturnix japonica]
+current: RPS3A
+RPS3A ribosomal protein S3A[Manacus vitellinus]
+RPS3A ribosomal protein S3A[Coturnix japonica]
+current: SLC13A3
+SLC13A3 solute carrier family 13 member 3[Manacus vitellinus]
+SLC13A3 solute carrier family 13 member 3[Coturnix japonica]
+current: LOC107318107
+LOC107318107 IgGFc-binding protein-like[Coturnix japonica]
+current: LOC107318455
+LOC107318455 beta-2-microglobulin[Coturnix japonica]
+current: LOC107317562
+LOC107317562 calcium-activated chloride channel regulator 1-like[Coturnix japonica]
+current: LOC107312884
+LOC107312884 glutamine amidotransferase-like class 1 domain-containing protein 3A, mitochondrial[Coturnix japonica]
+current: LOC107323563
+LOC107323563 guanylin-like[Coturnix japonica]
+current: PIGR
+PIGR polymeric immunoglobulin receptor[Manacus vitellinus]
+LOC107322373 uncharacterized LOC107322373[Coturnix japonica]
+current: LOC107321468
+LOC107321468 immunoglobulin lambda-1 light chain[Coturnix japonica]
+current: OLFM4
+OLFM4 olfactomedin 4[Manacus vitellinus]
+OLFM4 olfactomedin 4[Coturnix japonica]
+current: CD74
+CD74 CD74 molecule[Manacus vitellinus]
+CD74 CD74 molecule[Coturnix japonica]
+current: LOC107307407
+LOC107307407 maltase-glucoamylase, intestinal-like[Coturnix japonica]
+current: LOC107323344
+LOC107323344 group IIE secretory phospholipase A2-like[Coturnix japonica]
+current: LOC107308972
+LOC107308972 highly reducing polyketide synthase cnsI-like[Coturnix japonica]
+current: LOC107314688
+LOC107314688 L-lactate dehydrogenase A chain[Coturnix japonica]
+current: LOC107322137
+LOC107322137 uncharacterized LOC107322137[Coturnix japonica]
+current: LOC107312688
+LOC107312688 uncharacterized LOC107312688[Coturnix japonica]
+current: EPCAM
+EPCAM epithelial cell adhesion molecule[Manacus vitellinus]
+EPCAM epithelial cell adhesion molecule[Coturnix japonica]
+current: CALM2
+CALM2 calmodulin 2[Manacus vitellinus]
+CALM2 calmodulin 2[Coturnix japonica]
+current: CALR
+CALR calreticulin[Coturnix japonica]
+current: SCP2
+HSDL2 hydroxysteroid dehydrogenase like 2[Manacus vitellinus]
+HSDL2 hydroxysteroid dehydrogenase like 2[Coturnix japonica]
+current: SLC5A1
+SLC5A1 solute carrier family 5 member 1[Manacus vitellinus]
+SLC5A1 solute carrier family 5 member 1[Coturnix japonica]
+current: LOC107309939
+LOC107309939 interferon alpha-inducible protein 6-like[Coturnix japonica]
+current: P4HB
+P4HB prolyl 4-hydroxylase subunit beta[Manacus vitellinus]
+P4HB prolyl 4-hydroxylase subunit beta[Coturnix japonica]
+current: RPL4
+RPL4 ribosomal protein L4[Manacus vitellinus]
+RPL4 ribosomal protein L4[Coturnix japonica]
+current: BSG
+BSG basigin (Ok blood group)[Manacus vitellinus]
+BSG basigin (Ok blood group)[Coturnix japonica]
+current: LOC107320451
+LOC107320451 ovoinhibitor[Coturnix japonica]
+current: HPX
+HPX hemopexin[Coturnix japonica]
+current: LOC107325879
+LOC107325879 sulfotransferase 2B1-like[Coturnix japonica]
+current: TF
+TF transferrin[Manacus vitellinus]
+NFIL3 nuclear factor, interleukin 3 regulated[Coturnix japonica]
+current: PSPH
+PSPH phosphoserine phosphatase[Manacus vitellinus]
+PSPH phosphoserine phosphatase[Coturnix japonica]
+current: LOC107310113
+LOC107310113 transthyretin[Coturnix japonica]
+current: LOC107308554
+LOC107308554 thyroid hormone-inducible hepatic protein[Coturnix japonica]
+current: ATIC
+ATIC 5-aminoimidazole-4-carboxamide ribonucleotide formyltransferase/IMP cyclohydrolase[Manacus vitellinus]
+ATIC 5-aminoimidazole-4-carboxamide ribonucleotide formyltransferase/IMP cyclohydrolase[Coturnix japonica]
+current: GC
+GPBP1L1 GC-rich promoter binding protein 1 like 1[Manacus vitellinus]
+NPR2 natriuretic peptide receptor 2[Coturnix japonica]
+current: VTN
+VTN vitronectin[Manacus vitellinus]
+VTN vitronectin[Coturnix japonica]
+current: LOC107323889
+LOC107323889 fatty acid-binding protein, liver[Coturnix japonica]
+current: LOC107310625
+LOC107310625 lymphocyte antigen 6E[Coturnix japonica]
+current: ORM2
+ORM2 orosomucoid 2[Coturnix japonica]
+current: LOC107311524
+LOC107311524 plasminogen[Coturnix japonica]
+current: ITIH3
+ITIH3 inter-alpha-trypsin inhibitor heavy chain 3[Coturnix japonica]
+current: LOC107311487
+LOC107311487 sulfotransferase 6B1-like[Coturnix japonica]
+current: ACLY
+ACLY ATP citrate lyase[Manacus vitellinus]
+ACLY ATP citrate lyase[Coturnix japonica]
+current: CFH
+CFH complement factor H[Manacus vitellinus]
+CFH complement factor H[Coturnix japonica]
+current: FADS2
+FADS2 fatty acid desaturase 2[Manacus vitellinus]
+FADS2 fatty acid desaturase 2[Coturnix japonica]
+current: LOC107312428
+LOC107312428 gallinacin-8[Coturnix japonica]
+current: DHRS7
+DHRS7 dehydrogenase/reductase 7[Manacus vitellinus]
+DHRS7 dehydrogenase/reductase 7[Coturnix japonica]
+current: A2M
+CD109 CD109 molecule[Manacus vitellinus]
+C3 complement C3[Coturnix japonica]
+current: F2
+LOC103753838 non-receptor tyrosine-protein kinase TYK2-like[Manacus vitellinus]
+ALDH1A1 aldehyde dehydrogenase 1 family member A1[Coturnix japonica]
+current: SERPINC1
+SERPINC1 serpin family C member 1[Manacus vitellinus]
+SERPINC1 serpin family C member 1[Coturnix japonica]
+current: LOC107315788
+LOC107315788 cytochrome P450 2C9-like[Coturnix japonica]
+current: LOC107307355
+LOC107307355 complement C3-like[Coturnix japonica]
+current: PAICS
+PAICS phosphoribosylaminoimidazole carboxylase and phosphoribosylaminoimidazolesuccinocarboxamide synthase[Manacus vitellinus]
+PAICS phosphoribosylaminoimidazole carboxylase and phosphoribosylaminoimidazolesuccinocarboxamide synthase[Coturnix japonica]
