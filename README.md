@@ -1,10 +1,8 @@
 # Reference Information
 
-## Provenance for this README
-
 This README.md was generated on 11-May-2026 by Meng-Ching Ko.
 
-This repository contains R Markdown scripts and all datasets needed for reproducing figures and supplementary figures in "Genomic and physiological changes in a sexually selected and frugivorous bird radiation" Balakrishnan et al. (link).
+This repository contains R Markdown scripts and all datasets needed for reproducing figures and supplementary figures in Balakrishnan et al. ["Genomic and physiological changes in a sexually selected and frugivorous bird radiation"](https://doi.org/10.1016/j.cub.2026.05.021), *Current Biology*.
 
 Data archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18416735.svg)](https://doi.org/10.5281/zenodo.18416735)
 
@@ -15,7 +13,7 @@ Data archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.184
 
 ## Dataset Overview
 
-This repository contains data files necessary to reproduce the figures and supplementary figures of Balakrishnan et al. "Genomic and physiological changes in a sexually selected and frugivorous bird radiation." Files span multiple levels of biological organization: genomic (molecular evolution of taste receptor and ion channel genes), physiological (in vitro taste receptor activation assays), and phenotypic (plumage sexual dimorphism, dietary composition, social bonding) datasets for manakins (Pipridae) and related passerine bird species.
+This repository contains data files necessary to reproduce the figures and supplementary figures of Balakrishnan et al. ["Genomic and physiological changes in a sexually selected and frugivorous bird radiation"](https://doi.org/10.1016/j.cub.2026.05.021). Files span multiple levels of biological organization: genomic (molecular evolution of taste receptor and ion channel genes), physiological (in vitro taste receptor activation assays), and phenotypic (plumage sexual dimorphism, dietary composition, social bonding) datasets for manakins (Pipridae) and related passerine bird species.
 
 ---
 
