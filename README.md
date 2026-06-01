@@ -6,7 +6,7 @@ This README.md was generated on 11-May-2026 by Meng-Ching Ko.
 
 This repository contains R Markdown scripts and all datasets needed for reproducing figures and supplementary figures in "Genomic and physiological changes in a sexually selected and frugivorous bird radiation" Balakrishnan et al. (link).
 
-Data deposited on Zenodo: https://doi.org/10.5281/zenodo.18416735
+Data archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18416735.svg)](https://doi.org/10.5281/zenodo.18416735)
 
 - AUTHOR INFORMATION
   * Ko, Meng-Ching, Evolution of Sensory and Physiological Systems Department, Max Planck Institute for Biological Intelligence
@@ -125,7 +125,7 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Variables:
   * Sort By Bonferroni: Row rank when sorted by Bonferroni-corrected p-value
   * Sort by P: Row rank when sorted by raw p-value
-  * clade: Clade tested (Pipridae); note — this column header is stored as the Excel date serial 44606 and is renamed to `clade` when read in R
+  * clade: Clade tested (Pipridae); note ??? this column header is stored as the Excel date serial 44606 and is renamed to `clade` when read in R
   * Category: DAVID annotation category (KEGG_PATHWAY)
   * Term: KEGG pathway identifier and name (format: hsa#####:pathway_name)
   * Synthetic Category: Manually assigned broader functional grouping (e.g., Immune, Diet)
@@ -156,7 +156,7 @@ This repository contains data files necessary to reproduce the figures and suppl
   * UCNE_name: Ultra-conserved non-coding element or alignment region ID
   * All_manakin_variants: Number of variant sites across all manakin sequences
   * Fancy_manakin_variants: Number of variant sites in elaborately ornamented ("fancy") manakin species
-  * Index: Score ranging from −1 to 1, calculated as (All_manakin_variants − Fancy_manakin_variants) / (All_manakin_variants + Fancy_manakin_variants). Values > 0 indicate more changes on the branch leading to all manakins (Pipridae base); values < 0 indicate more changes unique to derived Piprinae manakins.
+  * Index: Score ranging from ???1 to 1, calculated as (All_manakin_variants ??? Fancy_manakin_variants) / (All_manakin_variants + Fancy_manakin_variants). Values > 0 indicate more changes on the branch leading to all manakins (Pipridae base); values < 0 indicate more changes unique to derived Piprinae manakins.
 - Missing data codes: No missing data
 
 #### Fig2D_speciesNames_10_14.txt
