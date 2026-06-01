@@ -23,8 +23,8 @@ This repository contains data files necessary to reproduce the figures and suppl
 | --- | --- | --- |
 | Fig1.Rmd | Fig.1D, 1E; Fig.S1 | Fig1D_Manakin_Ultrametric_AllSpecies_75_m1.tre; Fig1E_allspecies.za.txt; FigS1_allspecies.za.vit.txt |
 | Fig2.Rmd | Fig.2A, 2C, 2D, 2E, 2F, 2G; Fig.S2D, S2E, S2F | Fig2A_KEGG_David_Pipridae.xlsx; Fig2C_Fig3A_EliotTreeMod_2020-11-16_modified.tre; Fig2C_TLE4_Arthur_aligned.fasta; Fig2C_TLE4_all_and_fancy_manakin_specific_variants_20230111.tsv; Fig2D_speciesNames_10_14.txt; Fig2E_absrel_ordering.csv; Fig2E_absrel_summary.csv; Fig2F_S2D-F_species_names_muscle_transcriptomes_tree_nobranchlen.nw; Fig2F_S2D-F_2025-12-02-cpmdata.xlsx; Fig2G_LPH.json; Fig2G_T1R3.json |
-| Fig3.Rmd | Fig.3A-F; Fig.S3D, S3E | Fig2C_Fig3A_EliotTreeMod_2020-11-16_modified.tre; Fig3A_treeDec15_T1R1.txt.newick; Fig3B.csv; Fig3C-E.csv; Fig3C-E_stats.csv; Fig3F.csv; Fig3F_stats.csv; FigS3DE.csv; FigS3D_stats_sugar.csv; FigS3E_stats_his.csv |
-| Fig4.Rmd | Fig.4A, 4B; Fig.S4A-E | Fig4A.csv; Fig4B.csv; Fig4B_LPH_trimmed_absrel.json; FigS4A-C_Pizo_data.xlsx; FigS4A-C_dados_spp_level_with bird families.xlsx; rnaseq/sample_info.csv; rnaseq/gotGeneName_withquail.txt; rnaseq/star/MV-*_ReadsPerGene.out.tab |
+| Fig3.Rmd | Fig.3A-F; Fig.S3D, S3E | Fig2C_Fig3A_EliotTreeMod_2020-11-16_modified.tre; Fig3A_treeDec15_T1R1.txt.newick; Fig3B.csv; Fig3C-E.csv; Fig3C-E_stats.csv; Fig3F.csv; Fig3F_stats.csv; FigS3DE.csv; FigS3D_stats_sugar.csv; FigS3E_stats_his.csv; T1R1_Neopelma.fasta; T1R3_Neopelma.fasta; T1R1_Lepidothrix.fasta; T1R3_Lepidothrix.fasta; T1R1_ASR.fasta; T1R3_ASR.fasta |
+| Fig4.Rmd | Fig.4A, 4B; Fig.S4A-E | Fig4A.csv; Fig4B.csv; Fig4B_LPH_trimmed_absrel.json; FigS4A-C_Pizo_data.xlsx; FigS4A-C_dados_spp_level_with bird families.xlsx; rnaseq/sample_info.csv; rnaseq/gotGeneName_withquail.txt; rnaseq/star/MV-*_ReadsPerGene.out.tab; LPH_ASR.fasta |
 | Fig5.Rmd | Fig.5A, 5B; Fig.S5A, S5D | Fig5A_pruned12Jan2021.tre; Fig5A_plumage_scores.csv; Fig5A_ManakinNamePlotDale_m.csv; Fig5A_Traits_combined_2020-10-24.csv; Fig5A_preppedSocialBonds.csv; Fig5A_Diet_ColorSchemes.csv; Fig5B_S5D_optima25Feb2022_3_m.csv |
 
 ---
@@ -50,6 +50,15 @@ This repository contains data files necessary to reproduce the figures and suppl
 - [Fig2E_absrel_ordering.csv](#fig2e_absrel_orderingcsv)
 - [Fig2E_absrel_summary.csv](#fig2e_absrel_summarycsv)
 - [Fig2D_speciesNames_10_14.txt](#fig2d_speciesnames_10_14txt)
+
+#### Taste receptor and LPH coding sequences
+- [T1R1_Neopelma.fasta](#t1r1_neopelmafasta)
+- [T1R3_Neopelma.fasta](#t1r3_neopelmafasta)
+- [T1R1_Lepidothrix.fasta](#t1r1_lepidothrixfasta)
+- [T1R3_Lepidothrix.fasta](#t1r3_lepidothrixfasta)
+- [T1R1_ASR.fasta](#t1r1_asrfasta)
+- [T1R3_ASR.fasta](#t1r3_asrfasta)
+- [LPH_ASR.fasta](#lph_asrfasta)
 
 #### Gene expression data
 - [Fig2F_S2D-F_2025-12-02-cpmdata.xlsx](#fig2fs2d-f_2025-12-02-cpmdataxlsx)
@@ -146,6 +155,41 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Description: Multiple sequence alignment (FASTA format) of TLE4 coding sequences across passerine species, used as input for positive selection analyses in Fig. 2C.
 - Format(s): .fasta
 - Missing data codes: Alignment gaps represented as "-"
+
+#### T1R1_Neopelma.fasta
+- Description: Full coding sequence (CDS) of the T1R1 (taste receptor type 1, member 1) gene from *Neopelma chrysocephalum*. Used as the wild-type reference sequence taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R1_Neopelma)
+
+#### T1R3_Neopelma.fasta
+- Description: Full coding sequence of the T1R3 (taste receptor type 1, member 3) gene from *Neopelma chrysocephalum*. Used as the wild-type reference for taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R3_Neopelma)
+
+#### T1R1_Lepidothrix.fasta
+- Description: Full coding sequence of the T1R1 gene from *Lepidothrix coronata*. Used as the wild-type reference taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R1_Lepidothrix)
+
+#### T1R3_Lepidothrix.fasta
+- Description: Full coding sequence of the T1R3 gene from *Lepidothrix coronata*. Used as the wild-type reference taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R3_Lepidothrix)
+
+#### T1R1_ASR.fasta
+- Description: Ancestral sequence reconstruction (ASR) outputs for the T1R1 gene at two ancestral nodes: the Tyrannida ancestor and the Manakin (Pipridae) ancestor. Used to test functional consequences of ancestral T1R1 variants in taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 2 (T1R1_Tyrannida, T1R1_Manakins)
+
+#### T1R3_ASR.fasta
+- Description: Ancestral sequence reconstruction (ASR) outputs for the T1R3 gene at two ancestral nodes: the Tyrannida ancestor and the Manakin (Pipridae) ancestor. Used alongside T1R1_ASR.fasta to test ancestral T1R1-T1R3 receptor pairs (Fig. 3).
+- Format(s): .fasta
+- Sequences: 2 (T1R3_Tyrannida, T1R3_Manakins)
+
+#### LPH_ASR.fasta
+- Description: Ancestral sequence reconstruction outputs for the LPH (lactase-phlorizin hydrolase) gene. Contains reconstructed sequences for the Tyrannida ancestor, the Manakin ancestor, and the broader Passerine ancestor, used to assess functional evolution of LPH enzyme activity (Fig. 4).
+- Format(s): .fasta
+- Sequences: 6 (including Tyrannida_LPH, Manakin_LPH, Passerine_LPH, and additional ancestral nodes)
 
 #### Fig2C_TLE4_all_and_fancy_manakin_specific_variants_20230111.tsv
 - Description: Tab-separated file listing TLE4 amino acid variants across manakin species, including an index score indicating the ratio of manakin-specific to all-manakin variants per alignment region.
