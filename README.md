@@ -51,7 +51,7 @@ This repository contains data files necessary to reproduce the figures and suppl
 - [Fig2E_absrel_summary.csv](#fig2e_absrel_summarycsv)
 - [Fig2D_speciesNames_10_14.txt](#fig2d_speciesnames_10_14txt)
 
-#### Taste receptor and LPH coding sequences
+#### Cloned taste receptor sequences and ASRs of LPH and T1Rs
 - [T1R1_Neopelma.fasta](#t1r1_neopelmafasta)
 - [T1R3_Neopelma.fasta](#t1r3_neopelmafasta)
 - [T1R1_Lepidothrix.fasta](#t1r1_lepidothrixfasta)
@@ -111,7 +111,7 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Format(s): .tre (Newick)
 
 #### Fig1E_allspecies.za.txt
-- Description: Per-chromosome Z:A ratios (ratio of Z chromosome nucleotide diversity to autosomal nucleotide diversity) for 7 passerine species across ~31 chromosomes. Used to compare Z-linked vs. autosomal diversity in Fig. 1E.
+- Description: Per-chromosome Z:A ratios (ratio of Z chromosome nucleotide diversity to autosomal nucleotide diversity) for 7 passerine species. Used to compare Z-linked vs. autosomal diversity in Fig. 1E.
 - Format(s): .txt (space-separated)
 - Variables:
   * species: Species identifier (abbreviated)
@@ -121,22 +121,20 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Missing data codes: No missing data
 
 #### FigS1_allspecies.za.vit.txt
-- Description: Viterbi-decoded Z:A ratios for the same 7 passerine species, inferred from a hidden Markov model. Used in Fig. S1.
+- Description: Per-chromosome Z:A ratios for the same 7 passerine species mapped to M. vitellinus. Used in Fig. S1.
 - Format(s): .txt (space-separated)
 - Variables: same as Fig1E_allspecies.za.txt (species, chrom, pi, za)
 - Missing data codes: No missing data
 
 #### Fig2A_KEGG_David_Pipridae.xlsx
-- Description: KEGG pathway enrichment results (from DAVID functional annotation analysis) for genes showing differential expression or positive selection in Pipridae (manakins). Used in Fig. 2A.
+- Description: KEGG pathway enrichment results (from DAVID functional annotation analysis) for genes showing positive selection in Pipridae (manakins). Used in Fig. 2A.
 - Format(s): .xlsx
 - Variables:
   * Sort By Bonferroni: Row rank when sorted by Bonferroni-corrected p-value
   * Sort by P: Row rank when sorted by raw p-value
-  * clade: Clade tested (Pipridae); note ??? this column header is stored as the Excel date serial 44606 and is renamed to `clade` when read in R
+  * clade: Clade tested (Pipridae)
   * Category: DAVID annotation category (KEGG_PATHWAY)
   * Term: KEGG pathway identifier and name (format: hsa#####:pathway_name)
-  * Synthetic Category: Manually assigned broader functional grouping (e.g., Immune, Diet)
-  * Additional diet: Additional dietary relevance annotation
   * Count: Number of genes from the input list annotated to this pathway
   * PValue: Raw enrichment p-value (Fisher's exact test via DAVID)
   * Genes: Comma-separated list of gene symbols in the pathway
@@ -147,62 +145,27 @@ This repository contains data files necessary to reproduce the figures and suppl
   * Bonferroni: Bonferroni-corrected p-value
 - Missing data codes: Empty cells 
 
-#### Fig2C_Fig3A_EliotTreeMod_2020-11-16_modified.tre
-- Description: Newick-format phylogenetic tree of passerine species used for visualization of positive selection results (Fig. 2C) and taste receptor gene tree (Fig. 3A).
+#### Fig2C_EliotTreeMod_2020-11-16_modified.tre
+- Description: Newick-format phylogenetic tree of passerine species used for visualization of UCNE results (Fig. 2C).
 - Format(s): .tre (Newick)
 
 #### Fig2C_TLE4_Arthur_aligned.fasta
-- Description: Multiple sequence alignment (FASTA format) of TLE4 coding sequences across passerine species, used as input for positive selection analyses in Fig. 2C.
+- Description: Multiple sequence alignment (FASTA format) of TLE4 coding sequences across passerine species, used as input for UCNE analyses in Fig. 2C.
 - Format(s): .fasta
 - Missing data codes: Alignment gaps represented as "-"
 
-#### T1R1_Neopelma.fasta
-- Description: Full coding sequence (CDS) of the T1R1 (taste receptor type 1, member 1) gene from *Neopelma chrysocephalum*. Used as the wild-type reference sequence taste receptor assays (Fig. 3).
-- Format(s): .fasta
-- Sequences: 1 (T1R1_Neopelma)
-
-#### T1R3_Neopelma.fasta
-- Description: Full coding sequence of the T1R3 (taste receptor type 1, member 3) gene from *Neopelma chrysocephalum*. Used as the wild-type reference for taste receptor assays (Fig. 3).
-- Format(s): .fasta
-- Sequences: 1 (T1R3_Neopelma)
-
-#### T1R1_Lepidothrix.fasta
-- Description: Full coding sequence of the T1R1 gene from *Lepidothrix coronata*. Used as the wild-type reference taste receptor assays (Fig. 3).
-- Format(s): .fasta
-- Sequences: 1 (T1R1_Lepidothrix)
-
-#### T1R3_Lepidothrix.fasta
-- Description: Full coding sequence of the T1R3 gene from *Lepidothrix coronata*. Used as the wild-type reference taste receptor assays (Fig. 3).
-- Format(s): .fasta
-- Sequences: 1 (T1R3_Lepidothrix)
-
-#### T1R1_ASR.fasta
-- Description: Ancestral sequence reconstruction (ASR) outputs for the T1R1 gene at two ancestral nodes: the Tyrannida ancestor and the Manakin (Pipridae) ancestor. Used to test functional consequences of ancestral T1R1 variants in taste receptor assays (Fig. 3).
-- Format(s): .fasta
-- Sequences: 2 (T1R1_Tyrannida, T1R1_Manakins)
-
-#### T1R3_ASR.fasta
-- Description: Ancestral sequence reconstruction (ASR) outputs for the T1R3 gene at two ancestral nodes: the Tyrannida ancestor and the Manakin (Pipridae) ancestor. Used alongside T1R1_ASR.fasta to test ancestral T1R1-T1R3 receptor pairs (Fig. 3).
-- Format(s): .fasta
-- Sequences: 2 (T1R3_Tyrannida, T1R3_Manakins)
-
-#### LPH_ASR.fasta
-- Description: Ancestral sequence reconstruction outputs for the LPH (lactase-phlorizin hydrolase) gene. Contains reconstructed sequences for the Tyrannida ancestor, the Manakin ancestor, and the broader Passerine ancestor, used to assess functional evolution of LPH enzyme activity (Fig. 4).
-- Format(s): .fasta
-- Sequences: 6 (including Tyrannida_LPH, Manakin_LPH, Passerine_LPH, and additional ancestral nodes)
-
 #### Fig2C_TLE4_all_and_fancy_manakin_specific_variants_20230111.tsv
-- Description: Tab-separated file listing TLE4 amino acid variants across manakin species, including an index score indicating the ratio of manakin-specific to all-manakin variants per alignment region.
+- Description: Tab-separated file listing TLE4 amino acid variants across manakin species, including an index score indicating the ratio of Piprinae-specific to all-manakin variants per alignment region.
 - Format(s): .tsv
 - Variables:
   * UCNE_name: Ultra-conserved non-coding element or alignment region ID
   * All_manakin_variants: Number of variant sites across all manakin sequences
   * Fancy_manakin_variants: Number of variant sites in elaborately ornamented ("fancy") manakin species
-  * Index: Score ranging from ???1 to 1, calculated as (All_manakin_variants ??? Fancy_manakin_variants) / (All_manakin_variants + Fancy_manakin_variants). Values > 0 indicate more changes on the branch leading to all manakins (Pipridae base); values < 0 indicate more changes unique to derived Piprinae manakins.
+  * Index: Score ranging from -1 to 1, calculated as (All_manakin_variants - Fancy_manakin_variants) / (All_manakin_variants + Fancy_manakin_variants). Values > 0 indicate more changes on the branch leading to all manakins (Pipridae); values < 0 indicate more changes unique to derived Piprinae manakins.
 - Missing data codes: No missing data
 
 #### Fig2D_speciesNames_10_14.txt
-- Description: List of species abbreviation codes and full species names for the 24 species used in transcriptome analyses (10 non-manakins, 14 manakins). Used in Fig. 2D.
+- Description: List of species abbreviation codes and full species names for the 14 species used in aBSREL analyses. Used in Fig. 2D.
 - Format(s): .txt (tab-separated)
 - Variables:
   * Column 1: Species abbreviation code
@@ -216,7 +179,7 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Missing data codes: No missing data
 
 #### Fig2E_absrel_summary.csv
-- Description: Summary table of aBSREL (adaptive branch-site random effects likelihood) results for muscle-expressed passerine genes. Used in Fig. 2E.
+- Description: Summary table of aBSREL (adaptive branch-site random effects likelihood) results. Used in Fig. 2E.
 - Format(s): .csv
 - Variables:
   * class: Tissue class (e.g., Muscle)
@@ -253,6 +216,43 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Description: HyPhy aBSREL JSON output file for T1R3 (sweet taste receptor subunit 3). Used in Fig. 2G.
 - Format(s): .json (HyPhy output)
 
+
+
+#### T1R1_Neopelma.fasta
+- Description: Full coding sequence (CDS) of the T1R1 (taste receptor type 1, member 1) gene from *Neopelma chrysocephalum*. Used as the wild-type reference sequence in taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R1_Neopelma)
+
+#### T1R3_Neopelma.fasta
+- Description: Full coding sequence of the T1R3 (taste receptor type 1, member 3) gene from *Neopelma chrysocephalum*. Used as the wild-type reference in taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R3_Neopelma)
+
+#### T1R1_Lepidothrix.fasta
+- Description: Full coding sequence of the T1R1 gene from *Lepidothrix coronata*. Used as the wild-type reference in taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R1_Lepidothrix)
+
+#### T1R3_Lepidothrix.fasta
+- Description: Full coding sequence of the T1R3 gene from *Lepidothrix coronata*. Used as the wild-type reference in taste receptor assays (Fig. 3).
+- Format(s): .fasta
+- Sequences: 1 (T1R3_Lepidothrix)
+
+#### T1R1_ASR.fasta
+- Description: Ancestral sequence reconstruction (ASR) outputs for the T1R1 gene at two ancestral nodes: the Tyrannida ancestor and the Manakin (Pipridae) ancestor. Used alongside T1R3_ASR.fasta to test ancestral T1R1-T1R3 receptor pairs (Fig. 3).
+- Format(s): .fasta
+- Sequences: 2 (T1R1_Tyrannida, T1R1_Manakins)
+
+#### T1R3_ASR.fasta
+- Description: Ancestral sequence reconstruction (ASR) outputs for the T1R3 gene at two ancestral nodes: the Tyrannida ancestor and the Manakin (Pipridae) ancestor. Used alongside T1R1_ASR.fasta to test ancestral T1R1-T1R3 receptor pairs (Fig. 3).
+- Format(s): .fasta
+- Sequences: 2 (T1R3_Tyrannida, T1R3_Manakins)
+
+#### LPH_ASR.fasta
+- Description: Ancestral sequence reconstruction outputs for the LPH (lactase-phlorizin hydrolase) gene. Contains reconstructed sequences for the Tyrannida ancestor, the manakin ancestor, and the passerine ancestor, used to assess functional evolution of LPH enzyme activity (Fig. 4).
+- Format(s): .fasta
+- Sequences: 6 (including Tyrannida_LPH, Manakin_LPH, Passerine_LPH, and additional ancestral nodes)
+
 #### Fig3B.csv
 - Description: Mean luminescence responses of two manakin T1R1-T1R3 receptor pairs to amino acid or sugar ligands. Used in Fig. 3B.
 - Format(s): .csv
@@ -263,7 +263,7 @@ This repository contains data files necessary to reproduce the figures and suppl
   * Ligand: Ligand name
   * Concentraction (mM): Ligand concentration in millimolar
   * mean: Mean luminescence response/1000
-  * n: Number of assay measured
+  * n: Sample size
   * sd: Standard deviation of response
   * sem: Standard error of the mean
 - Missing data codes: No missing data
@@ -282,7 +282,7 @@ This repository contains data files necessary to reproduce the figures and suppl
   * pval_onesided: One-sided t-test p-value
   * tval_onesided: t-statistic
   * df_onesided: Degrees of freedom
-  * stderr_onesided: Standard error of the difference
+  * stderr_onesided: Standard error
   * sig (padj_onesided<0.01): Significance flag at FDR-adjusted p < 0.01
   * sig (padj_onesided<0.05): Significance flag at FDR-adjusted p < 0.05
 - Missing data codes: No missing data
@@ -301,7 +301,7 @@ This repository contains data files necessary to reproduce the figures and suppl
   * Ligand: Ligand display name
   * Concentraction (mM): Ligand concentration in millimolar
   * mean: Mean luminescence response
-  * n: Number of cells measured
+  * n: Sample sizes
   * sd: Standard deviation
   * sem: Standard error of the mean
   * type: Assay type identifier
@@ -319,7 +319,7 @@ This repository contains data files necessary to reproduce the figures and suppl
   * sem_1 / sem_2: Standard errors
   * tval_onesided: t-statistic
   * df_onesided: Degrees of freedom
-  * stderr_onesided: Standard error of difference
+  * stderr_onesided: Standard error
   * pval_onesided: One-sided p-value
   * sig (pval_onesided<0.05): Significance flag; NA where the comparison was not statistically tested
 - Missing data codes: Cells with missing data are coded as NA
@@ -386,13 +386,13 @@ This repository contains data files necessary to reproduce the figures and suppl
   * sem_1 / sem_2: Standard errors
   * tval_onesided: t-statistic (one-sided test)
   * df_onesided: Degrees of freedom
-  * stderr_onesided: Standard error of the difference
+  * stderr_onesided: Standard error
   * pval_onesided: One-sided t-test p-value
   * padj_onesided_FDR: FDR-corrected p-value
 - Missing data codes: No missing data
 
 #### Fig4B.csv
-- Description: As Fig4A.csv, for the Fig. 4B comparison of LPH enzyme variant activity with a broader ligand panel.
+- Description: As Fig4A.csv, for the Fig. 4B comparison of ancestral LPH enzymes activity.
 - Format(s): .csv
 - Variables: same as Fig4A.csv
 - Missing data codes: No missing data
@@ -402,7 +402,7 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Format(s): .json (HyPhy output)
 
 #### FigS4A-C_Pizo_data.xlsx
-- Description: Lipid composition data for Pipra/Pizo and related species, used in Fig. S4A-C.
+- Description: Lipid composition data, used in Fig. S4A-C.
 - Format(s): .xlsx
 - Sheets: `bird visits` (Fig. S4A-B), `correlation` (Fig. S4C)
 - Variables (`bird visits` sheet):
@@ -468,11 +468,11 @@ This repository contains data files necessary to reproduce the figures and suppl
   * Column 4: Reverse-strand read count
 
 #### Fig5A_pruned12Jan2021.tre
-- Description: Newick-format phylogenetic tree of ~1178 passerine species, pruned from the BirdTree.org 10,000-species consensus tree. Used for ancestral state reconstruction of frugivory and plumage sexual dimorphism in Fig. 5A.
+- Description: Newick-format phylogenetic tree of ~1178 suboscine species from Harvey et al. 2020. Used for comparative analyses of frugivory and plumage sexual dimorphism in Fig. 5 and S5.
 - Format(s): .tre (Newick)
 
 #### Fig5A_plumage_scores.csv
-- Description: Plumage brightness/ornamentation scores for ~5831 bird species (males and females separately) and life-history principal component axes. Used for sexual dimorphism analyses in Fig. 5A.
+- Description: Plumage brightness/ornamentation scores for males and females separately and life-history principal component axes from Dale et al. 2015. Used for sexual dimorphism analyses in Fig. 5 and S5.
 - Format(s): .csv
 - Variables:
   * Scientific_name: Species scientific name (Genus species format)
@@ -480,23 +480,18 @@ This repository contains data files necessary to reproduce the figures and suppl
   * TipLabel: Species label as used in phylogenetic tree (Genus_species format)
   * Female_plumage_score: Plumage ornamentation score for females (0-100 scale)
   * Male_plumage_score: Plumage ornamentation score for males (0-100 scale)
-  * Body_size_ppca: Body size axis from phylogenetic principal component analysis of life-history traits
-  * Tropical_life_history_ppca: Tropical life-history axis from pPCA
-  * Sexual_selection_ppca: Sexual selection axis from pPCA
-  * Cooperative_breeding_ppca: Cooperative breeding axis from pPCA
-  * Migration_ppca: Migration axis from pPCA
-- Missing data codes: Cells with missing data are coded as NA
+- Missing data codes: No missing data
 
 #### Fig5A_ManakinNamePlotDale_m.csv
-- Description: Name mapping table linking species names in the Dale et al. plumage dataset to tree tip labels. Used to join plumage scores to phylogenetic tree tips in Fig. 5A.
+- Description: Name mapping table linking species names in the Dale et al. 2015 plumage dataset to tree tip labels. Used to join plumage scores to phylogenetic tree tips in Fig. 5.
 - Format(s): .csv
 - Variables:
   * DALE: Species name as used in the Dale et al. plumage dataset
   * tree75sp: Corresponding species name as used in the phylogenetic tree tip labels
-- Missing data codes: Rows where tree75sp is blank indicate species whose names matched directly without remapping
+- Missing data codes: No missing data
 
 #### Fig5A_Traits_combined_2020-10-24.csv
-- Description: Dietary composition and trophic classification for ~9992 bird species, compiled from EltonTraits database. Used for frugivory ancestral state reconstruction in Fig. 5A and Fig. S5A.
+- Description: Dietary composition and trophic classification, compiled from EltonTraits database (Wilman et al. 2014). Used for frugivory ancestral state reconstruction in Fig. 5 and Fig. S5.
 - Format(s): .csv
 - Variables:
   * Tip_Label: Species name as used in the phylogenetic tree (Genus_species format)
@@ -516,7 +511,7 @@ This repository contains data files necessary to reproduce the figures and suppl
 - Missing data codes: Cells with missing data are coded as NA
 
 #### Fig5A_preppedSocialBonds.csv
-- Description: Social bonding index for ~1178 bird species (Tobias et al., 2016), used alongside frugivory and plumage data in Fig. 5A.
+- Description: Social bonding index from Tobias et al., 2016, used alongside frugivory and plumage data in Fig. 5 and S5.
 - Format(s): .csv
 - Variables:
   * species: Species name as used in phylogenetic tree (Genus_species format)

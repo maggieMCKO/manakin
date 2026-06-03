@@ -136,7 +136,7 @@ rootedge   = 2
 offset_tip = x_limit / 50
 
 tree_p = ggtree(tree_phy, size = linewidth, aes(col = `Uncorrected_P.value<0.05`)) +
-  geom_tiplab(offset = offset_tip, size = 2, color = "grey10", fontface = 3) +
+  geom_tiplab(offset = offset_tip, size = 3, color = "grey10", fontface = 3) +
   xlim_tree(x_limit) +
   scale_color_continuous(low = 'red', high = 'rosybrown1', na.value = "grey50",
                          n.breaks = 3, limits = c(0, 0.05)) +
@@ -216,7 +216,7 @@ p_a = ggplot(lipid_data2, aes(x = bird_family, y = weighted_mean)) +
   scale_y_continuous(name = 'Percentage of lipids',
                      limits = c(10, 45), breaks = seq(15, 45, by = 5),
                      expand = c(0, 0)) +
-  theme_classic(base_size = 6) +
+  theme_classic() +
   theme(axis.title.x = element_blank(),
         legend.position = "none"); p_a
 ```
@@ -251,7 +251,7 @@ p_b = ggplot(lipid_data, aes(x = `lipid level`, y = mean, color = `lipid level`)
   scale_y_continuous(name = 'Number of visits per plant species',
                      limits = c(0, 200), breaks = seq(50, 200, 50),
                      expand = c(0, 0)) +
-  theme_classic(base_size = 6) +
+  theme_classic() +
   theme(strip.background = element_blank(),
         axis.title.x     = element_blank(),
         legend.position  = c(0.1, 0.8)); p_b
@@ -283,7 +283,7 @@ p_c = ggplot(lipid_data0_cor, aes(x = LIP, y = NSC)) +
                      limits = c(-2, 1), breaks = seq(0, 1, .2),
                      expand = c(0, 0)) +
   coord_cartesian(xlim = c(0, 0.8), ylim = c(0, 1)) +
-  theme_classic(base_size = 6) +
+  theme_classic() +
   theme(strip.background = element_blank(),
         legend.position  = "none"); p_c
 ```
@@ -355,10 +355,9 @@ make_gene_plot = function(g){
       scale_y_continuous(name = "CPM/1000", limits = c(NA, y_limit),
                          breaks = breaks_tmp, expand = c(0, 0)) +
       ggtitle(g) +
-      theme_classic(base_size = 6) +
+      theme_classic() +
       theme(axis.title.x   = element_blank(),
             axis.text.x    = element_text(angle = 40, vjust = 1.2, hjust = 1),
-            plot.title     = element_text(size = 5),
             legend.position = "none")
   } else {
     ggplot(d, aes(x = Tissue, y = mean)) +
@@ -368,10 +367,9 @@ make_gene_plot = function(g){
       scale_y_continuous(name = "CPM", limits = c(NA, y_limit),
                          breaks = breaks_tmp, expand = c(0, 0)) +
       ggtitle(g) +
-      theme_classic(base_size = 6) +
+      theme_classic() +
       theme(axis.title.x   = element_blank(),
             axis.text.x    = element_text(angle = 40, vjust = 1.2, hjust = 1),
-            plot.title     = element_text(size = 5),
             legend.position = "none")
   }
 }
@@ -436,12 +434,9 @@ pl = lapply(tissues_order, function(s){
                         limits = c(NA, 150000)) +
     scale_y_discrete(limits = rev) +
     facet_grid(Tissue ~ ., scales = "free", space = "free", switch = "y") +
-    theme_classic(base_size = 6) +
+    theme_classic() +
     theme(strip.background = element_blank(),
           strip.placement  = "outside",
-          strip.text       = element_text(size = 6),
-          axis.text.y      = element_text(size = 6),
-          axis.text.x      = element_text(size = 6),
           axis.title.y     = element_blank(),
           axis.title.x     = element_blank(),
           legend.position  = "right")

@@ -24,7 +24,6 @@ AxisTitleFontSizeSize = 5
 
 set.seed(42)
 
-# setwd('/Users/mbp23/ownCloud/Baldwin/Projects/Manakin/Rscripts/for_github')
 ```
 
 

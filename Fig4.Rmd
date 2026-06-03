@@ -29,7 +29,6 @@ AxisTitleFontSizeSize = 5
 
 set.seed(42)
 
-# setwd('/Users/mbp23/ownCloud/Baldwin/Projects/Manakin/Rscripts/for_github')
 ```
 
 
@@ -50,7 +49,7 @@ df = bind_rows(df_ut, df_other)
 
 
 ### Fig.4A
-```{r, fig.width = 4, fig.height = 2, message = FALSE}
+```{r, fig.width = 6, fig.height = 3, message = FALSE}
 ligands_reorder = c("Lactose", "Phlorizin")
 
 df$Ligand = factor(df$Ligand, levels = ligands_reorder)
@@ -87,7 +86,7 @@ p_lct_wt = ggplot(df, aes(x = Enzyme, y = mean)) +
 
 
 ## Fig.4B aBSREL
-```{r, fig.width = 3, fig.height = 4, message = FALSE, warning=FALSE}
+```{r, fig.width = 4, fig.height = 5, message = FALSE, warning=FALSE}
 path = "data/Fig4B_LPH_trimmed_absrel.json"
 tmp  = fromJSON(txt = path)
 
@@ -136,7 +135,7 @@ rootedge   = 2
 offset_tip = x_limit / 50
 
 tree_p = ggtree(tree_phy, size = linewidth, aes(col = `Uncorrected_P.value<0.05`)) +
-  geom_tiplab(offset = offset_tip, size = 2, color = "grey10", fontface = 3) +
+  geom_tiplab(offset = offset_tip, size = 3, color = "grey10", fontface = 3) +
   xlim_tree(x_limit) +
   scale_color_continuous(low = 'red', high = 'rosybrown1', na.value = "grey50",
                          n.breaks = 3, limits = c(0, 0.05)) +
@@ -179,7 +178,7 @@ df = bind_rows(df_ut, df_other)
 
 
 ### Fig.4B
-```{r, fig.width = 4, fig.height = 2, echo = FALSE}
+```{r, fig.width = 6, fig.height = 3, echo = FALSE}
 ligands_reorder = c("Lactose", "Phlorizin")
 
 df$Ligand = factor(df$Ligand, levels = ligands_reorder)
@@ -231,7 +230,7 @@ lipid_data0 = lipid_data0 %>%
 
 
 ### Fig.S4A
-```{r, fig.width = 3, fig.height = 3}
+```{r, fig.width = 4, fig.height = 4}
 lipid_data1 = lipid_data0 %>%
   mutate(lipid_consumption = lipids * visits)
 
@@ -248,14 +247,14 @@ p_a = ggplot(lipid_data2, aes(x = bird_family, y = weighted_mean)) +
   scale_y_continuous(name = 'Percentage of lipids',
                      limits = c(10, 45), breaks = seq(15, 45, by = 5),
                      expand = c(0, 0)) +
-  theme_classic(base_size = 6) +
+  theme_classic() +
   theme(axis.title.x = element_blank(),
         legend.position = "none"); p_a
 ```
 
 
 ### Fig.S4B
-```{r, fig.width = 5, fig.height = 3, message=FALSE}
+```{r, fig.width = 5, fig.height = 4, message=FALSE}
 lipid_lv_order = c("high", "low")
 
 lipid_data = lipid_data0 %>%
@@ -281,7 +280,7 @@ p_b = ggplot(lipid_data, aes(x = `lipid level`, y = mean, color = `lipid level`)
   scale_y_continuous(name = 'Number of visits per plant species',
                      limits = c(0, 200), breaks = seq(50, 200, 50),
                      expand = c(0, 0)) +
-  theme_classic(base_size = 6) +
+  theme_classic() +
   theme(strip.background = element_blank(),
         axis.title.x     = element_blank(),
         legend.position  = c(0.1, 0.8)); p_b
@@ -289,7 +288,7 @@ p_b = ggplot(lipid_data, aes(x = `lipid level`, y = mean, color = `lipid level`)
 
 
 ### Fig.S4C
-```{r, fig.width = 3, fig.height = 3, message = FALSE, warning=FALSE}
+```{r, fig.width = 4, fig.height = 4, message = FALSE, warning=FALSE}
 path = "data/FigS4A-C_Pizo_data.xlsx"
 lipid_data0_cor = read_excel(path, sheet = 2)
 
@@ -311,7 +310,7 @@ p_c = ggplot(lipid_data0_cor, aes(x = LIP, y = NSC)) +
                      limits = c(-2, 1), breaks = seq(0, 1, .2),
                      expand = c(0, 0)) +
   coord_cartesian(xlim = c(0, 0.8), ylim = c(0, 1)) +
-  theme_classic(base_size = 6) +
+  theme_classic() +
   theme(strip.background = element_blank(),
         legend.position  = "none"); p_c
 ```
@@ -339,7 +338,7 @@ nc_gap = cpm(dge) %>% as_tibble(rownames = "gene") %>%
 
 
 ### Fig.S4D
-```{r, fig.width = 7, fig.height = 2, warning = FALSE}
+```{r, fig.width = 9, fig.height = 2, warning = FALSE}
 gene_map = tribble(
   ~gene_id,        ~label,
   "APOB",          "APOB",
@@ -381,10 +380,9 @@ make_gene_plot = function(g){
       scale_y_continuous(name = "CPM/1000", limits = c(NA, y_limit),
                          breaks = breaks_tmp, expand = c(0, 0)) +
       ggtitle(g) +
-      theme_classic(base_size = 6) +
+      theme_classic() +
       theme(axis.title.x   = element_blank(),
             axis.text.x    = element_text(angle = 40, vjust = 1.2, hjust = 1),
-            plot.title     = element_text(size = 5),
             legend.position = "none")
   } else {
     ggplot(d, aes(x = Tissue, y = mean)) +
@@ -394,10 +392,9 @@ make_gene_plot = function(g){
       scale_y_continuous(name = "CPM", limits = c(NA, y_limit),
                          breaks = breaks_tmp, expand = c(0, 0)) +
       ggtitle(g) +
-      theme_classic(base_size = 6) +
+      theme_classic() +
       theme(axis.title.x   = element_blank(),
             axis.text.x    = element_text(angle = 40, vjust = 1.2, hjust = 1),
-            plot.title     = element_text(size = 5),
             legend.position = "none")
   }
 }
@@ -408,7 +405,7 @@ plot_grid(plotlist = pp, nrow = 1)
 
 
 ### Fig.S4E
-```{r, fig.width = 4, fig.height = 9}
+```{r, fig.width = 7, fig.height = 9}
 N = 20
 tissues_order = c("Kidney", "Liver", "Intestine")
 
@@ -460,12 +457,9 @@ pl = lapply(tissues_order, function(s){
                         limits = c(NA, 150000)) +
     scale_y_discrete(limits = rev) +
     facet_grid(Tissue ~ ., scales = "free", space = "free", switch = "y") +
-    theme_classic(base_size = 6) +
+    theme_classic() +
     theme(strip.background = element_blank(),
           strip.placement  = "outside",
-          strip.text       = element_text(size = 6),
-          axis.text.y      = element_text(size = 6),
-          axis.text.x      = element_text(size = 6),
           axis.title.y     = element_blank(),
           axis.title.x     = element_blank(),
           legend.position  = "right")

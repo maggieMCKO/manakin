@@ -26,7 +26,6 @@ AxisTitleFontSizeSize = 5
 
 set.seed(42)
 
-# setwd('/Users/mbp23/ownCloud/Baldwin/Projects/Manakin/Rscripts/for_github')
 ```
 
 ### Fig.2A top - tree
@@ -119,7 +118,7 @@ tokeep = sapply(tokeep, function(s){
   stringr::str_to_title(x)}) # 21
 tokeep = gsub("Budgie", "Budgerigar", tokeep) # for extract tips in tree
 
-path = "data/Fig2C_Fig3A_EliotTreeMod_2020-11-16_modified.tre"
+path = "data/Fig2C_EliotTreeMod_2020-11-16_modified.tre"
 tree = read.tree(path)
 setdiff(tree$tip.label, tokeep)
 length(intersect(tree$tip.label, tokeep)) # 21 > good

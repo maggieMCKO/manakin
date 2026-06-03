@@ -143,15 +143,16 @@ traits_m4_long$TrophicNicheCat = factor(traits_m4_long$TrophicNicheCat, levels =
 
 col_pal_sm = colorscheme$color_5_202201_alpha[-c(9, 10)]
 
-theme_tmp = theme(
-  plot.background   = element_blank(),
+theme_tmp = theme_m + theme(
   strip.text        = element_blank(),
+  axis.line         = element_blank(),
+  axis.ticks        = element_blank(),
+  axis.text.x       = element_blank(),
   axis.text.y       = element_blank(),
+  axis.title.x      = element_blank(),
+  axis.title.y      = element_blank(),
   legend.key.size   = unit(8, "points"),
-  legend.position   = "right",
-  legend.title      = element_text(size = AxisTxFontSizeSize),
-  legend.text       = element_text(size = AxisTxFontSizeSize_s),
-  legend.background = element_blank())
+  legend.position   = "right")
 
 tree_p2 = tree_p +
   geom_facet(panel = "Diet class break down", data = traits_m4_long, geom = geom_col,
@@ -162,7 +163,6 @@ tree_p2 = tree_p +
              aes(xintercept = 0)) +
   scale_fill_manual(values = col_pal_sm) +
   guides(fill = guide_legend(ncol = 1, byrow = TRUE, reverse = FALSE)) +
-  theme_m +
   theme_tmp
 
 tree_p2
@@ -183,8 +183,6 @@ trait_sub = trait %>%
 trait_sub_l = trait_sub %>%
   pivot_longer(cols = c(plumage.difference,fruit,biparental.care), names_to = "col", values_to = "val")
 
-# trait_sub_l$col = factor(trait_sub_l$col,
-                         # levels = c("fruit", "plumage.difference", "biparental.care"))
 trait_sub_l$species = factor(trait_sub_l$species, 
                              levels = c("Synallaxis_azarae", "Mionectes_macconnelli",
                                         "Pipra_erythrocephala", "Philepitta_castanea"))

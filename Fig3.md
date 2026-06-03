@@ -22,12 +22,13 @@ frugivorous bird radiation’.
 ### Fig.3A
 
 ``` r
-path = "data/Fig2C_Fig3A_EliotTreeMod_2020-11-16_modified.tre"
+path = "data/Fig3A_EliotTreeMod_2020-11-16.nw"
 tree = read.tree(path)
 # plot(tree)
 
 barsize = 0.75
 tree_p = ggtree(tree, branch.length = 'none', layout = 'circular', size = 0.3) + 
+  # geom_text(aes(label=node), hjust=-.3, size = 2) +
   geom_hilight(node=263, fill="#FFE6D5", alpha=.6) + 
   geom_cladelab(node=259, label="Passerine", align=TRUE, 
                 offset.text = 1, offset = 10, angle = 0, barsize = barsize,
